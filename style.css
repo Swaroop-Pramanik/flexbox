@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+}
+
+.parent {
+  height: 100vh;
+  border: 20px solid rgb(0, 0, 0);
+  display: flex;
+  /*   flex-direction:row-reverse; */
+  /*   justify-content: center; */
+  /*   justify-content: flex-end; */
+  /*   justify-content: space-between; */
+  /*   justify-content: space-around; */
+  /*   justify-content: space-evenly; */
+  /*   align-items: center; */
+  /*   align-items: flex-start; */
+  /*   align-items: flex-end; */
+  /*   align-items: stretch;  needs to have height deleted*/
+  /*   flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  flex-wrap: wrap;
+  /*   align-content: flex-start; */
+  /*   align-content: space-around */
+  /*   align-items: baseline */
+  flex-flow: column-wrap;
+}
+
+.child1 {
+  width: 200px;
+  height: 200px;
+  background: rgb(39, 61, 134);
+  flex: 1;
+  align-self: center;
+}
+
+.child2 {
+  width: 200px;
+  height: 200px;
+  background: rgb(172, 57, 53);
+  flex: 1;
+}
+
+.child3 {
+  width: 200px;
+  height: 200px;
+  background: rgb(149, 43, 140);
+  flex: 1;
+  align-self: center;
+}
+
+.child4 {
+  width: 200px;
+  height: 200px;
+  background: darkgreen;
+  order: 0;
+  flex: 1;
+  align-self: center;
+}
